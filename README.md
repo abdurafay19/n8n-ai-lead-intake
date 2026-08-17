@@ -262,6 +262,42 @@ This demonstrates how LLMs can be used for **controlled text generation inside a
 
 ---
 
+## 🧹 Database Deduplication & Cleanup
+
+![Database Deduplication Workflow](Dedupe.png)
+
+A separate **on-demand maintenance workflow** was created to keep the lead database clean and handle duplicate records when they occur.
+
+Unlike the main lead-intake workflow, this workflow is **not designed to run continuously**. It is manually triggered when duplicate records are detected, when an issue occurs, or when the database needs a periodic cleanup. 
+
+### How it works
+
+```text
+Google Sheets
+      ↓
+Read all leads
+      ↓
+Normalize email addresses
+      ↓
+Detect duplicate emails
+      ↓
+Identify duplicate rows
+      ↓
+Loop through duplicates
+      ↓
+Delete duplicate rows
+```
+
+The workflow reads the existing records from Google Sheets, normalizes email addresses by trimming whitespace and converting them to lowercase, and uses a JavaScript `Set` to identify duplicate emails.  
+
+Once duplicates are identified, the workflow loops through the relevant rows and removes them from the spreadsheet. 
+
+### 💡 Why a separate workflow?
+
+I kept database cleanup separate from the main lead-processing workflow so that the primary automation remains focused on **processing incoming leads**, while this workflow serves as a **maintenance and recovery tool** that can be run whenever necessary.
+
+---
+
 # 🧰 Tech Stack
 
 | Technology | Purpose |

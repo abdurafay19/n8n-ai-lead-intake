@@ -526,27 +526,6 @@ This project helped me explore several concepts:
 
 ---
 
-# 🚧 Limitations & Future Improvements
-
-This is a **learning project**, so it is not intended to be presented as a production-ready lead-management platform.
-
-Potential improvements include:
-
-- [ ] More robust schema validation
-- [ ] Better error handling and retry logic
-- [ ] Automated tests for incoming payloads
-- [ ] Centralized configuration
-- [ ] Better observability and logging
-- [ ] More sophisticated lead scoring
-- [ ] Human approval for sensitive actions
-- [ ] Better duplicate-resolution logic
-- [ ] Production deployment architecture
-- [ ] More form providers
-- [ ] Analytics dashboard
-- [ ] Persistent audit trail
-
----
-
 # 🎓 Why I Built This
 
 I built this project primarily to **learn n8n**.

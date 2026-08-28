@@ -4,8 +4,6 @@
 
 ![n8n Lead Intake Workflow](lead-intake.png)
 
-> **Note:** The screenshot above is intended to show the complete n8n workflow. Add an exported screenshot from your n8n editor at `docs/screenshots/workflow-overview.png`.
-
 ---
 
 ## 📌 About the Project

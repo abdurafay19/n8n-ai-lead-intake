@@ -2,7 +2,7 @@
 
 > A hands-on **n8n project** exploring workflow automation, webhooks, data normalization, validation, AI-powered lead qualification, CRM integrations, and automated notifications.
 
-![n8n Lead Intake Workflow](lead-intake.png)
+![n8n Lead Intake Workflow](docs/screenshots/lead-intake.png)
 
 ---
 
@@ -262,7 +262,7 @@ This demonstrates how LLMs can be used for **controlled text generation inside a
 
 ## 🧹 Database Deduplication & Cleanup
 
-![Database Deduplication Workflow](Dedupe.png)
+![Database Deduplication Workflow](docs/screenshots/dedupe-cleanup.png)
 
 A separate **on-demand maintenance workflow** was created to keep the lead database clean and handle duplicate records when they occur.
 
@@ -358,7 +358,7 @@ In n8n:
 4. Select:
 
 ```text
-workflow/lead-intake.json
+workflows/lead-intake.json
 ```
 
 5. Review the nodes and connections.

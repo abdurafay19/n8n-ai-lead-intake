@@ -415,7 +415,7 @@
     },
     {
       "parameters": {
-        "sendTo": "your-email@gmail.com",
+        "sendTo": "YOUR_NOTIFICATION_EMAIL",
         "subject": "=New Lead ({{ $json.fullName }})",
         "emailType": "text",
         "message": "=A new lead has been entered using {{ $json.source }} at time {{  $json.lastContacted }}. The name is {{  $json.fullName }} with budget {{ $json.estimatedBudget }}.",
@@ -1437,7 +1437,7 @@
         },
         "builtInTools": {},
         "options": {
-          "systemMessage": "Generate a professional acknowledgment email (60-100 words). Thank the customer for contacting Netpac, acknowledge receipt of their inquiry, briefly mention their project only if it can be summarized confidently without inventing details, invite them to reply with additional information, and end professionally. Never fabricate information, timelines, pricing, technical solutions, or review status. Never claim that the request has already been analyzed. Only return the email body."
+          "systemMessage": "Generate a professional acknowledgment email (60-100 words). Thank the customer for contacting YOUR_COMPANY_NAME, acknowledge receipt of their inquiry, briefly mention their project only if it can be summarized confidently without inventing details, invite them to reply with additional information, and end professionally. Never fabricate information, timelines, pricing, technical solutions, or review status. Never claim that the request has already been analyzed. Only return the email body."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
